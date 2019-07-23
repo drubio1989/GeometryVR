@@ -17,7 +17,7 @@ export default class GeometryVR extends React.Component {
     return (
       <View>
       <Box dimWidth={0.5} dimHeight={0.5} dimDepth={0.5}style={{ color: 'green', transform: [{translate: [-1, 0, 0]}]}}/>
-      <Sphere style={{ color: 'red', transform: [{ translateX: 0 }] }}/>
+      <Sphere radius={0.5} widthSegments={20} heightSegments={12}  style={{ color: 'red', transform: [{ translateX: 0 }] }}/>
       <Cylinder radiusTop={0.25} radiusBottom={0.25} dimHeight={2} segments={12} style={{ color:'yellow', transform: [{translate: [1, 0, 0]}]}}/>
       <Plane dimWidth={10} dimHeight={10} style={{ color: 'purple', transform: [{translate: [0, -5, -5]},  { rotateX: -90 }]}}/>
       </View>
